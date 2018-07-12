@@ -1,0 +1,33 @@
+extends ../vega-lite.pug
+
+block title
+  | Basic
+
+block extrascript
+  script(src='/basic/bundle.js')
+
+block content
+  h1 Basic
+  
+  :marked
+    These are basic examples from the [official tutorial](https://vega.github.io/vega-lite/tutorials/getting_started.html).
+
+  hr
+
+  :marked
+    The `a` field is mapped to the `x` channel, `b` is mapped to `y` channel  
+  #vis1
+    
+  :marked
+    Values for `b` are averaged    
+  #vis2
+
+  p Render as bar chart  
+  #vis3
+
+  :marked
+    Swap `x` and `y` to get a horizontal bar chart    
+  #vis4
+
+  p Change the title of the x axis  
+  #vis5
