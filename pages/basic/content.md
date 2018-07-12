@@ -1,6 +1,6 @@
 # Basic
 
-These are basic examples from the [official tutorial](https://vega.github.io/vega-lite/tutorials/getting_started.html).
+These are examples from the [official Getting Started tutorial](https://vega.github.io/vega-lite/tutorials/getting_started.html).
 
 ---
 
