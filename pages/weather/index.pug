@@ -1,0 +1,10 @@
+extends /vega-lite.pug
+
+block title
+  | Weather
+
+block extrascript
+  script(src='/weather/bundle.js')
+
+block content
+  include:marked content.md
