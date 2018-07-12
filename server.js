@@ -8,6 +8,7 @@ const express = require('express')
 
 const app = express()
 app.use(express.static('public'))
+app.locals.basedir = path.join(__dirname, 'templates')
 app.set('view engine', 'pug')
 app.set('views', 'pages')
 
