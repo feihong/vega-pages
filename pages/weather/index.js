@@ -1,10 +1,10 @@
-const dataUrl = '/data/seattle-weather.csv'
+const data = {url: '/data/seattle-weather.csv'}
 function embed(selector, spec) {
   vegaEmbed(selector, spec, {defaultStyle: true}).catch(console.warn)
 }
 
 embed('#tick', {
-  "data": {"url": dataUrl},
+  data,
   "mark": "tick",
   "encoding": {
     "x": {"field": "precipitation", "type": "quantitative"}
@@ -12,7 +12,7 @@ embed('#tick', {
 })
 
 embed('#histogram', {
-  "data": {"url": dataUrl},
+  data,
   "mark": "bar",
   "encoding": {
     "x": {
@@ -29,7 +29,7 @@ embed('#histogram', {
 })
 
 embed('#month', {
-  "data": {"url": dataUrl},
+  data,
   "mark": "line",
   "encoding": {
     "x": {
@@ -48,7 +48,7 @@ embed('#month', {
 })
 
 embed('#yearmonth', {
-  "data": {"url": dataUrl},
+  data,
   "mark": "line",
   "encoding": {
     "x": {
@@ -65,7 +65,7 @@ embed('#yearmonth', {
 })
 
 embed('#temp-by-year', {
-  "data": {"url": dataUrl},
+  data,
   "mark": "line",
   "encoding": {
     "x": {
@@ -83,7 +83,7 @@ embed('#temp-by-year', {
 })
 
 embed('#variability', {
-  "data": {"url": dataUrl},
+  data,
   "transform": [
     // Define a new field temp_range that is the difference between max and min
     // daily temperatures
@@ -109,7 +109,7 @@ embed('#variability', {
 })
 
 embed('#weather-types', {
-  "data": {"url": dataUrl},
+  data,
   "mark": "bar",
   "encoding": {
     "x": {
@@ -132,7 +132,7 @@ embed('#weather-types', {
 })
 
 embed('#weather-types-color', {
-  "data": {"url": dataUrl},
+  data,
   "mark": "bar",
   "encoding": {
     "x": {
