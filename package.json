@@ -1,7 +1,7 @@
 {
-  "name": "vega-sandbox",
+  "name": "vega-pages",
   "version": "0.0.1",
-  "description": "A sandbox for exploring with Vega",
+  "description": "A scaffold for visualization-heavy websites",
   "engines": {
     "node": "10.x"
   },
